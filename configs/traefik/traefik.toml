@@ -16,15 +16,15 @@ defaultEntryPoints = ["https","http"]
 
 [docker]
 endpoint = "unix:///var/run/docker.sock"
-domain = "mav.duckdns.org"
+domain = "waff.gg"
 watch = true
 exposedByDefault = false
 
 [acme]
-email = "matjaz.mav@gmail.com"
+email = "Darkpaw95@gmail.com"
 storage = "/var/opt/acme.json"
 entryPoint = "https"
 onHostRule = true
     [acme.dnsChallenge]
-    provider = "duckdns"
+    provider = "cloudflare"
     delayBeforeCheck = 0
